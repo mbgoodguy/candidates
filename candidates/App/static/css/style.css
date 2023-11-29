@@ -20,3 +20,37 @@ body {
 .push {
     height: 50px;
 }
+
+/* ----------------------------
+# SWEETALERT
+---------------------------- */
+/* Icon settings */
+.swal-icon--success:before,
+.swal-icon--success:after,
+.swal-icon--success__hide-corners {
+    background: none !important;
+}
+.swal-icon--success {
+    border-color: #007bff; /* Ring color */
+}
+.swal-icon--success__line {
+    background-color: #007bff; /* Color animation */
+}
+
+/* Button settings */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 3px;
+    background-color: #007bff;
+    font-size: 12px;
+    border: 1px solid #007bff;
+}
+.swal-button:focus {
+    box-shadow: none; /* Remove the silver border of button */
+}
+
+.swal-button:not([disabled]):hover {
+    background: transparent;
+    color: #111;
+    border: 1px solid #007bff,
+}
