@@ -6,7 +6,7 @@
 <!-- Navbar content-->
 {% block nav-content %}
 <i class="fas fa-user-times"></i>&nbsp;&nbsp; DELETE CANDIDATE
-{% block nav-content %}
+{% endblock nav-content %}
 
 
 <!-- Footer -->
@@ -30,13 +30,13 @@
             <div class="text-dark mt-3 mb-2">Candidate: <strong>{{ candidate.name }}</strong></div>
         </div>
         <hr>
-        <form>
+        <form method="post">
             {% csrf_token %}
             <input class="btn btn-outline-danger btn-sm ms-2" type="submit" value="Delete" style="float: right;">
             <a href="{% url 'read' %}" class="btn btn-secondary btn-sm" style="float: right;">Cancel</a>
         </form>
     </div>
     <br><hr><br>
-    <span class="text-danger">If you proceed, this data will become unrecoverrable.</span>
+    <p class="text-danger" style="text-align: center;">If you proceed, this data will become unrecoverrable.</p>
 </div>
 {% endblock content %}
